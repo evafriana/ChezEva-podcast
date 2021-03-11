@@ -1,0 +1,69 @@
+.cta {
+  position: fixed;
+  bottom: 20%;
+  right: -100px;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  z-index: 20;
+  transform: rotate(-90deg);
+}
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  /* background: rgba(255, 171, 157, 0.5); */
+  background: var(--color-pink);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+.cta span {
+  color: var(--color-text);
+  position: relative;
+  line-height: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.cta svg {
+  width: 2rem;
+  height: 1rem;
+  padding-left: 0.4rem;
+  position: relative;
+  fill: rgb(6, 6, 6);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--color-text);
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.cta:hover:before {
+  width: 100%;
+  background: var(--color-pink);
+}
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.96);
+}
+
+/* media query */
+
+@media screen and (min-width: 768px) {
+  .cta {
+    right: -85px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .cta {
+    right: -20px;
+  }
+}

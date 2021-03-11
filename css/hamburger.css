@@ -1,0 +1,70 @@
+* {
+  outline: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#hamburger {
+  display: none;
+}
+
+label {
+  z-index: 100;
+  position: fixed;
+  top: 3rem;
+  right: 4%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+  transition: 0.3s ease transform;
+  cursor: pointer;
+}
+
+label div {
+  height: 5px;
+  background-color: var(--color-text);
+  margin-left: 0;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,
+    0.3s ease background-color;
+}
+
+label div:first-child {
+  width: 22px;
+}
+
+label div:nth-child(2) {
+  width: 14px;
+}
+
+label div:last-child {
+  width: 22px;
+  margin-bottom: 0;
+}
+
+#hamburger:checked + label {
+  transform: translateY(-50%) rotateZ(-90deg);
+}
+
+#hamburger:checked + label div {
+  width: 6px;
+  margin-left: 12px;
+  margin-bottom: 3px;
+  background-color: var(--color-red);
+}
+
+/* media query  */
+
+@media screen and (min-width: 768px) {
+  label {
+    top: 4rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  label {
+    right: 100px;
+    top: 5rem;
+  }
+}

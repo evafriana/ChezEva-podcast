@@ -1,0 +1,147 @@
+.nav-links {
+  top: 0;
+  position: fixed;
+  background: var(--color-bg);
+  z-index: 30;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  clip-path: circle(100px at 125% -25%);
+  -webkit-clip-path: circle(100px at 125% -25%);
+  transition: all 1s ease-out;
+  pointer-events: none;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+}
+.nav-links.open {
+  clip-path: circle(200% at 100% -20%);
+  -webkit-clip-path: circle(200% at 100% -20%);
+  pointer-events: all;
+  padding: 9rem 0;
+}
+.nav-links li {
+  opacity: 0;
+}
+.nav-links li a {
+  color: var(--color-text);
+  font-family: "Bigilla", serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+.about li {
+  opacity: 0;
+  line-height: 4rem;
+}
+.about-host li a {
+  font-size: 2rem;
+  color: var(--color-text);
+}
+.media li a {
+  font-size: 2rem;
+}
+.nav-links li:nth-child(1) {
+  transition: all 0.5s ease 0.2s;
+}
+.nav-links li:nth-child(2) {
+  transition: all 0.5s ease 0.4s;
+}
+.nav-links li:nth-child(3) {
+  transition: all 0.5s ease 0.6s;
+}
+li.fade {
+  opacity: 1;
+}
+
+/* Media query */
+
+/* Smallest device */
+@media (min-width: 100px) {
+  .nav-links li {
+    line-height: 3.8rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .nav-links li {
+    line-height: 4.5rem;
+  }
+  .about-host li a {
+    font-size: 2.5rem;
+  }
+  .media li a {
+    font-size: 2.5rem;
+  }
+}
+
+/* Small devices (landscape phones, 500px and up) */
+@media (min-width: 500px) {
+  .nav-links li {
+    line-height: 5rem;
+  }
+  .about-host li a {
+    font-size: 3rem;
+  }
+  .media li a {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 600px) {
+  .nav-links li {
+    line-height: 5.5rem;
+  }
+  .about-host li a {
+    font-size: 3.5rem;
+  }
+  .media li a {
+    font-size: 3.5rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .navlink {
+    padding: 10rem 0;
+  }
+  .nav-links li {
+    line-height: 6.5rem;
+  }
+  .about-host li a {
+    font-size: 4rem;
+  }
+  .media {
+    display: flex;
+    padding-top: 3rem;
+  }
+  .media li a {
+    font-size: 3rem;
+  }
+  .insta-link {
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .nav-links li {
+    line-height: 6.6rem;
+  }
+  .about-host li a {
+    font-size: 4.4rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up)  */
+@media screen and (min-width: 992px) {
+  .nav-links li {
+    line-height: 6.7rem;
+  }
+  .about-host li a {
+    font-size: 4.6rem;
+  }
+  .insta-link {
+    padding: 0 5rem;
+  }
+}
