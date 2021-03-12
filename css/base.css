@@ -3,7 +3,7 @@
   --color-text: #060606;
   --color-bg: #f3eee8;
   --color-brown: #e2dacc;
-  --color-red: #d73234;
+  --color-red: #c0092b;
   --color-blue: #9cb6c1;
   --color-pink: #e798a5;
 }
@@ -20,14 +20,14 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--color-red);
+  color: var(--color-text);
   outline: none;
   cursor: pointer;
 }
 
 a:hover,
 a:focus {
-  color: var(--color-pink);
+  color: var(--color-red);
   outline: none;
 }
 
@@ -80,6 +80,9 @@ a:focus {
   }
   .social-text {
     color: var(--color-text);
+  }
+  .social-text:hover {
+    color: var(--color-red);
   }
   .link {
     margin: 0.5rem 0 0 0;

@@ -230,7 +230,7 @@ body {
 }
 
 .card {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("https://images.pexels.com/photos/6833444/pexels-photo-6833444.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=5000");
   background-size: cover;
@@ -264,14 +264,16 @@ body {
 }
 /* Spotify  */
 .spotify {
-  border: 1px solid;
-  padding: 0.5rem 1rem;
-  margin: 1rem 0;
-  border-radius: 15%;
+  border: solid;
+  padding: 1rem 2em;
+  margin: 2rem;
+  border-radius: 20%;
+  background-color: var(--color-brown);
+  border-style: none;
 }
 .follow p {
   text-align: center;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 .follow ul {
   display: flex;
@@ -285,8 +287,8 @@ body {
 
 /* Collaborate  */
 .collaborate {
-  padding-top: 2rem;
-  font-size: 2.6rem;
+  padding-top: 3rem;
+  font-size: 13vw;
   font-family: "Bigilla", serif;
   font-weight: bold;
   text-align: center;
@@ -302,7 +304,7 @@ body {
 .arrow {
   position: relative;
   width: 3.5rem;
-  margin: 1rem 14rem;
+  margin: 2rem 14rem 1.5rem;
 }
 .contactme {
   position: relative;
@@ -316,11 +318,13 @@ body {
   margin: 0 5.5rem;
 }
 .inside-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
   position: absolute;
   width: 100%;
   right: -6%;
   top: 14%;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .arrow-left {
   width: 1.5rem;
@@ -329,7 +333,7 @@ body {
 }
 .arrow-right {
   width: 1.5rem;
-  margin: -5.5rem 0 0 11rem;
+  margin: -5.5rem 0 0 12rem;
   -webkit-transform: rotate(90deg) scaleY(-1); /* Chrome, Opera 15+, Safari 3.1+ */
   -ms-transform: rotate(90deg) scaleY(-1); /* IE 9 */
   transform: rotate(-40deg) scaleY(-1); /* Firefox 16+, IE 10+, Opera */
@@ -343,7 +347,7 @@ body {
 }
 .cta {
   position: relative;
-  margin: 4rem 0;
+  margin: 6rem 0 4rem;
   padding: 19px 0px 19px 22px;
   transition: all 0.2s ease;
   z-index: 20;
@@ -395,21 +399,9 @@ body {
   transform: scale(0.96);
 }
 
-/* @media screen and (min-width: 768px) {
-  .cta {
-    right: -85px;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .cta {
-    right: -20px;
-  }
-} */
-/* End cta  */
-
 /* Media query */
 
+/* Smallest devices */
 @media screen and (min-width: 400px) {
   /* Eye  */
   .button {
@@ -428,25 +420,57 @@ body {
     font-size: 20vh;
   }
   /* End hero  */
+
+  /* Eye  */
   .button {
     margin: -26vh 55vw;
   }
+  /* End eye */
+
+  /* Collaborate  */
+  .collaborate {
+    padding-top: 6rem;
+    padding-top: 4rem;
+  }
+  /* End collaborate  */
+
+  /* Contact  */
+  .arrow {
+    width: 4.5rem;
+  }
+  .contactme {
+    width: 15rem;
+  }
+  .inside-text {
+    font-size: 1.6rem;
+    top: 15%;
+  }
+  .arrow-left {
+    width: 2rem;
+    margin: -8rem 0 0 -9rem;
+  }
+  .arrow-right {
+    width: 2rem;
+    margin: -7rem 0 0 15rem;
+    transform: rotate(-50deg) scaleY(-1);
+  }
+  /* End contact */
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  /* Hero  */
-
-  /* End hero */
-
   /* Eye */
   .button {
     margin: -19vh 60vw;
   }
   /* End eye  */
 
-  /* Teaser */
-  /* End teaser  */
+  /* Collaborate  */
+  .collaborate {
+    padding-top: 8rem;
+    font-size: 12vw;
+  }
+  /* End collaborate  */
 }
 
 /* Large devices (desktops, 812px and up) */
@@ -503,15 +527,57 @@ body {
 
   /* Eye  */
   .button {
-    margin: -9vh 71vw;
+    margin: -10vh 72vw;
   }
   /* End eye  */
 
   /* Description  */
   .description {
-    margin: 4rem 10rem;
+    margin: 6rem 10rem;
     font-size: 18px;
   }
-
   /* End description  */
+
+  /* card */
+  .card-play p {
+    font-size: 18px;
+  }
+  .card {
+    width: 20rem;
+  }
+  /* End card */
+
+  /* Link media  */
+  .link-media p {
+    font-size: 18px;
+  }
+  /* End link media */
+
+  /* Collaborate  */
+  .collaborate {
+    font-size: 11vw;
+  }
+  /* End collaborate  */
+
+  /* Contact  */
+  .arrow {
+    width: 5rem;
+    margin-top: 3rem;
+  }
+  .contactme {
+    width: 17rem;
+  }
+  .inside-text {
+    font-size: 1.8rem;
+    top: 16%;
+  }
+  .arrow-left {
+    width: 2rem;
+    margin: -7rem 0 0 -11rem;
+  }
+  .arrow-right {
+    width: 2rem;
+    margin: -8rem 0 0 18rem;
+  }
+  /* End contact */
 }
