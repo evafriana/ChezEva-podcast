@@ -13,8 +13,8 @@ label {
   top: 3rem;
   right: 4%;
   display: block;
-  /* width: 30px; */
-  /* height: 30px; */
+  width: 30px;
+  height: 30px;
   transform: translateY(-50%);
   transition: 0.3s ease transform;
   cursor: pointer;

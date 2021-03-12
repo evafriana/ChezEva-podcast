@@ -54,6 +54,10 @@ a:focus {
   font-weight: bolder;
 }
 
+.active {
+  position: relative;
+}
+
 /* media query  */
 
 /* Medium devices (tablets, 768px and up) */

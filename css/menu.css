@@ -1,3 +1,13 @@
+.active::after {
+  content: "HOME";
+  color: transparent;
+  padding: 2.5rem;
+  left: -20%;
+  top: -90%;
+  position: absolute;
+  background-image: url("../assets/img/lingkaran-red.svg");
+}
+
 body {
   overflow: hidden;
 }
