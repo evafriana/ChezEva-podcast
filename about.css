@@ -18,7 +18,7 @@
 }
 
 section {
-  margin: 4rem 0;
+  margin: 6rem 0;
 }
 .container {
   padding: 0 1rem;
@@ -39,36 +39,62 @@ body {
   font-weight: bold;
   color: var(--color-pink);
 }
-.hero-about p {
-  font-size: 3rem;
-  margin: 0 1.5rem 3px 0;
+.title-1 p {
+  font-size: 13vw;
+  margin-right: 2rem;
   font-weight: bold;
   text-align: center;
 }
-.hero-about h1 {
-  font-size: 4.8rem;
+.title-1 h1 {
+  font-size: 23vw;
   text-align: center;
 }
 .hero-about img {
   width: 100%;
-  height: auto;
-  margin-bottom: -1.8rem;
 }
-.hero-about h2 {
-  font-size: 4.8rem;
+.title-h2 {
+  font-size: 24vw;
   padding: 0 1rem;
+  margin-top: -4.7vh;
+  line-height: 0.9;
 }
+
+/* Teaser  */
+.teaser {
+  display: flex;
+  align-self: center;
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  max-width: 46ch;
+  padding: 0.5rem 0;
+}
+.par {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20vh;
+  font-weight: 300;
+  align-self: center;
+}
+.teaser-text {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  text-align: center;
+  align-self: center;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+/* End teaser  */
 /* End hero */
 
 /* Eye  */
 .button {
   position: relative;
-  left: 44%;
   pointer-events: auto;
   cursor: pointer;
   background: #e7e7e7;
   border: none;
-  margin-top: -12rem;
+  margin: -33vh 45vw;
   font-family: inherit;
   font-size: inherit;
   display: inline-block;
@@ -185,14 +211,16 @@ body {
 }
 /* End eye  */
 
-/* Teaser  */
-.teaser {
-  font-size: 0.8rem;
-  line-height: 1.2rem;
-  margin-top: 1rem;
-  text-align: right;
+/* Description  */
+.description {
+  font-size: 16px;
+  /* text-transform: uppercase; */
+  font-weight: lighter;
+  line-height: 4.2vh;
+  text-align: center;
+  margin-top: 2rem;
 }
-/* End teaser  */
+/* End description  */
 
 /* Card  */
 .card-play {
@@ -227,13 +255,6 @@ body {
   opacity: 0.9;
 }
 /* End card  */
-
-/* Description  */
-.description {
-  line-height: 1.5rem;
-  text-align: center;
-}
-/* End description  */
 
 /* Listen and subscribe  */
 .link-media {
@@ -374,7 +395,7 @@ body {
   transform: scale(0.96);
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .cta {
     right: -85px;
   }
@@ -384,63 +405,113 @@ body {
   .cta {
     right: -20px;
   }
-}
+} */
 /* End cta  */
 
 /* Media query */
 
+@media screen and (min-width: 400px) {
+  /* Eye  */
+  .button {
+    margin: -24vh 49vw;
+  }
+  /* End eye  */
+}
+
+/* Small devices (landscape phones, 540px and up) */
+@media (min-width: 540px) {
+  /* Hero  */
+  .title-h2 {
+    margin-top: -6vh;
+  }
+  .par {
+    font-size: 20vh;
+  }
+  /* End hero  */
+  .button {
+    margin: -26vh 55vw;
+  }
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  section {
-    margin: 6rem 0;
-  }
   /* Hero  */
-  .hero-about {
-    margin: 10rem 0;
-  }
-  .hero-about p {
-    font-size: 5rem;
-    margin-left: -4rem;
-  }
-  .hero-about h1 {
-    font-size: 12rem;
-  }
-  .hero-about img {
-    margin-bottom: -4.3rem;
-  }
-  .hero-about h2 {
-    font-size: 11.5rem;
-    padding: 0 3.2rem;
-  }
-  .paris {
-    margin-bottom: -142px;
-  }
+
   /* End hero */
 
   /* Eye */
   .button {
-    margin: -12rem 0 0 127px;
+    margin: -19vh 60vw;
   }
   /* End eye  */
 
   /* Teaser */
+  /* End teaser  */
+}
+
+/* Large devices (desktops, 812px and up) */
+@media (min-width: 812px) {
+  /* Hero  */
+  .hero-about {
+    margin: 0 7rem;
+  }
+  .title-1 {
+    margin-bottom: -0.5rem;
+  }
+  .title-1 p {
+    font-size: 6vw;
+    margin-left: 9rem;
+    text-align: start;
+  }
+  .title-1 h1 {
+    font-size: 15vw;
+    text-align: left;
+  }
+  .title-2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: -4rem;
+    z-index: -1;
+  }
+  .title-2 img {
+    min-width: 17rem;
+    max-width: 25rem;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .title-h2 {
+    margin-top: 10.5rem;
+  }
+  .basedin {
+    position: absolute;
+    right: 5rem;
+    font-size: 14vw;
+  }
+  .paris {
+    font-size: 14vw;
+    padding-top: 10.25rem;
+  }
+
+  /* Teaser  */
   .teaser {
-    font-size: 1.25rem;
-    line-height: 1.7rem;
-    margin: 5rem 0px 0 147px;
+    place-self: flex-end;
+    margin-bottom: -6rem;
   }
   /* End teaser  */
+  /* End hero  */
 
-  /* Card  */
-
-  /* End card  */
-  .card-play p {
-    font-size: 1.25rem;
+  /* Eye  */
+  .button {
+    margin: -9vh 71vw;
   }
+  /* End eye  */
+
   /* Description  */
   .description {
-    font-size: 1.563rem;
-    line-height: 2.4rem;
+    margin: 4rem 10rem;
+    font-size: 18px;
   }
+
   /* End description  */
 }
