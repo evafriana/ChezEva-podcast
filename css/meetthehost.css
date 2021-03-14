@@ -1,0 +1,96 @@
+.active::after {
+  content: "MEET THE HOST";
+  color: transparent;
+  width: 140%;
+  height: 250%;
+  left: -20%;
+  top: -83%;
+  position: absolute;
+  background-image: url("../assets/img/lingkaran-red.svg");
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+
+/* Hero */
+.desktop {
+  display: none;
+}
+.mth-text {
+  align-self: center;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+.mth-hero {
+  display: flex;
+  flex-direction: column;
+}
+.mth-hero img {
+  width: 100%;
+}
+.mth-title {
+  font-family: "Bigilla";
+  font-weight: bold;
+  line-height: 0.9;
+  margin-top: -3.5vh;
+  font-size: 33vw;
+  color: var(--color-pink);
+}
+/* End hero */
+
+/* Description */
+.mth-description {
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+/* End description */
+
+/* Image */
+.photo-eva {
+  right: 0;
+  opacity: 0.1;
+  z-index: -1;
+  width: 80%;
+  position: absolute;
+  margin-top: 27vh;
+}
+/* End image */
+
+/* Eye */
+#mth .button {
+  margin: 0 23vw;
+}
+/* End eye */
+
+/* Scrolling socials */
+.scrolling-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scrolling-socials h2 {
+  font-size: 1.2rem;
+}
+.scrolling-socials ul {
+  padding-top: 1.5rem;
+}
+.scrolling-socials li {
+  padding: 0.3rem 0;
+}
+/* End scrolling socials */
+
+/* Media query */
+
+/* Large devices (desktops, 812px and up) */
+@media screen and (min-width: 812px) {
+  /* Hero  */
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  /* End hero */
+}

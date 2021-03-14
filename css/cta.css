@@ -1,8 +1,9 @@
-.cta {
+/* HOME */
+#home .cta {
   position: fixed;
   bottom: 20%;
-  right: -100px;
   margin: auto;
+  right: -100px;
   padding: 19px 22px;
   transition: all 0.2s ease;
   z-index: 20;
@@ -57,13 +58,41 @@
 /* media query */
 
 @media screen and (min-width: 768px) {
-  .cta {
+  #home .cta {
     right: -85px;
   }
 }
 
 @media screen and (min-width: 800px) {
-  .cta {
+  #home .cta {
     right: -20px;
   }
+}
+
+/* ABOUT */
+#about .btn-cta {
+  display: flex;
+  justify-content: center;
+}
+#about .cta {
+  position: relative;
+  padding: 19px 0px 19px 22px;
+  margin-bottom: 1.5rem;
+}
+#about .cta svg {
+  top: 0.2rem;
+}
+
+/* MTH */
+#mth .btn-cta {
+  display: flex;
+  justify-content: center;
+}
+#mth .cta {
+  position: relative;
+  padding: 19px 0px 19px 22px;
+  margin-bottom: 1.5rem;
+}
+#mth .cta svg {
+  top: 0.2rem;
 }

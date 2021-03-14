@@ -94,7 +94,7 @@ if (window.document.querySelector(".menu__wrapper")) {
 }
 
 // Navbar
-const hamburger = document.getElementById("hamburger");
+const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 

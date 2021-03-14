@@ -1,4 +1,4 @@
-.active::after {
+#home .active::after {
   content: "HOME";
   color: transparent;
   padding: 2.5rem;
@@ -8,11 +8,15 @@
   background-image: url("../assets/img/lingkaran-red.svg");
 }
 
-body {
+#home {
   overflow: hidden;
 }
 
-.menu__wrapper {
+#home .episode {
+  color: var(--color-red);
+}
+
+#home .menu__wrapper {
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -30,23 +34,23 @@ body {
   user-select: none;
 }
 
-.menu__item {
+#home .menu__item {
   flex: none;
   margin-right: 3rem;
   padding: 1rem;
 }
 
-.menu__item-episode {
+#home .menu__item-episode {
   display: flex;
   justify-content: flex-start;
 }
 
-.menu__item-title {
+#home .menu__item-title {
   display: flex;
   justify-content: flex-end;
 }
 
-.menu__item-inner {
+#home .menu__item-inner {
   font-family: "Bigilla", serif;
   font-weight: bold;
   white-space: nowrap;
@@ -57,15 +61,16 @@ body {
   display: block;
   color: var(--color-text);
   transition: transform 0.2s;
+  text-align: end;
 }
 
-.menu__item-inner:hover {
+#home .menu__item-inner:hover {
   font-style: italic;
   transform: translate3d(2rem, 0, 0);
   color: var(--color-red);
 }
 
-.menu__item-inner::before {
+#home .menu__item-inner::before {
   content: "";
   top: 55%;
   width: 3.5rem;
@@ -77,11 +82,11 @@ body {
   pointer-events: none;
 }
 
-.menu__item-inner:hover::before {
+#home .menu__item-inner:hover::before {
   opacity: 1;
 }
 
-.menu__item-inner::after {
+#home .menu__item-inner::after {
   content: url("../assets/img/play-button.svg");
   width: 2rem;
   height: 1px;
@@ -92,7 +97,7 @@ body {
   /* pointer-events: none; */
 }
 
-.menu__item-inner:hover::after {
+#home .menu__item-inner:hover::after {
   opacity: 1;
 }
 
@@ -106,7 +111,7 @@ body {
 
 /* Smallest device */
 @media screen and (min-width: 53em) {
-  .menu__item-inner {
+  #home .menu__item-inner {
     padding: 1vh 0;
     font-size: 8vh;
   }
@@ -114,27 +119,27 @@ body {
 
 /* Small devices (landscape phones, 500px and up) */
 @media (min-width: 500px) {
-  .menu__item {
+  #home .menu__item {
     margin-right: 3.5rem;
   }
 }
 
 @media (min-width: 600px) {
-  .menu__item {
+  #home .menu__item {
     margin-right: 4rem;
   }
 }
 
 /* Medium devices (landscape phones, 768px and up) */
 @media (min-width: 768px) {
-  .menu__item {
+  #home .menu__item {
     margin-right: 14%;
   }
 }
 
 /* Large devices (landscape phones, 800px and up) */
 @media (min-width: 800px) {
-  .menu__item {
+  #home .menu__item {
     margin-right: 20%;
   }
 }

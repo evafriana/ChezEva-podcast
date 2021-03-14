@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>About Podcast</title>
     <meta charset="UTF-8" />
@@ -44,200 +44,210 @@
     <!-- Favicon -->
     <meta name="theme-color" content="#fff" />
     <!-- <link rel="stylesheet" href="./style.css" /> -->
-    <link rel="stylesheet" href="./about.css" />
+    <!-- <link rel="stylesheet" href="./about.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <!-- Nav -->
-    <!-- logo -->
-    <a href="index.html" class="logo">
-      <img src="./assets/img/chair-mic.svg" alt="logo bird" />
-      <h1>Chez Eva</h1>
-    </a>
-    <!-- end logo -->
-    <nav>
-      <input type="checkbox" id="hamburger" />
-      <label for="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </label>
-      <ul class="nav-links">
-        <div class="about-host">
-          <li><a href="/">HOME</a></li>
-          <li><a href="about.html" class="active">ABOUT</a></li>
-          <li><a href="">MEET THE HOST</a></li>
-        </div>
-        <div class="media">
-          <li><a href="">Spotify</a></li>
-          <li><a class="insta-link" href="">Instagram</a></li>
-          <li><a href="">Twitter</a></li>
-        </div>
-      </ul>
-    </nav>
-    <!-- End nav -->
-
-    <!-- Hero -->
-    <section class="hero-about mt-6">
-      <div class="title-1 container">
-        <p>Podcast</p>
+  <body lang="en" data-barba="wrapper">
+    <main id="about" data-barba="container" data-barba-namespace="about">
+      <!-- Nav -->
+      <!-- logo -->
+      <a href="index.html" class="logo">
+        <img src="./assets/img/chair-mic.svg" alt="logo bird" />
         <h1>Chez Eva</h1>
-      </div>
-      <!-- Teaser  -->
-      <div class="teaser">
-        <p class="par">(</p>
-        <p class="teaser-text">
-          Is working abroad more profitable than Indonesia? Is it difficult to
-          adapt to the work environment and culture or daily life abroad? How
-          can she/he works abroad? or simply, still confused about what to do
-          and where?
-        </p>
-        <p class="par">)</p>
-      </div>
-      <!-- End teaser  -->
-      <div class="title-2">
-        <img src="./assets/img/paris.png" alt="Paris by Cyril Mazarin" />
-        <div class="title-h2">
-          <h2 class="basedin">Based in</h2>
-          <h2 class="paris">Paris.</h2>
-        </div>
-      </div>
-    </section>
-    <!-- End hero -->
-
-    <!-- button eye  -->
-    <button class="button button--surtur mt-6">
-      <svg class="textcircle" viewBox="0 0 500 500">
-        <title>Like, Subscribe, & Share.</title>
-        <defs>
-          <path
-            id="textcircle"
-            d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
-          />
-        </defs>
-        <text>
-          <textPath
-            xlink:href="#textcircle"
-            aria-label="Projects & client work 2020"
-            textLength="900"
-          >
-            Like, Subscribe & Share.
-          </textPath>
-        </text>
-      </svg>
-      <svg
-        aria-hidden="true"
-        class="eye"
-        width="70"
-        height="70"
-        viewBox="0 0 70 70"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          class="eye__outer"
-          d="M10.5 35.308c5.227-7.98 14.248-13.252 24.5-13.252s19.273 5.271 24.5 13.252c-5.227 7.98-14.248 13.253-24.5 13.253s-19.273-5.272-24.5-13.253z"
-        />
-        <path
-          class="eye__lashes-up"
-          d="M35 8.802v8.836M49.537 11.383l-3.31 8.192M20.522 11.684l3.31 8.192"
-        />
-        <path
-          class="eye__lashes-down"
-          d="M35 61.818v-8.836 8.836zM49.537 59.237l-3.31-8.193 3.31 8.193zM20.522 58.936l3.31-8.193-3.31 8.193z"
-        />
-        <circle class="eye__iris" cx="35" cy="35.31" r="5.221" />
-        <circle class="eye__inner" cx="35" cy="35.31" r="10.041" />
-      </svg>
-    </button>
-    <!-- button eye  -->
-
-    <!-- Description  -->
-    <section class="description container">
-      <p>
-        Eva and a new guest each episode talk about professional career journey
-        of Indonesians abroad, especially in France, to help sound off on your
-        questions in this lighthearted, insightful biweekly podcast. This
-        podcast will be in Indonesian.
-      </p>
-    </section>
-    <!-- End description  -->
-
-    <!-- Card  -->
-    <section class="card-play mt-6 container">
-      <p>- Last episode -</p>
-      <a class="card">
-        <img src="../assets/img/play-button.svg" alt="" /> Loïc Riviere
       </a>
-    </section>
-    <!-- End card  -->
-
-    <section class="link-media mt-6">
-      <p>LISTEN & SUBSCRIBE ON :</p>
-      <span class="spotify">
-        <a href="">Spotify</a>
-      </span>
-      <div class="follow">
-        <p>FOLLOW ME :</p>
-        <ul>
-          <li>
-            <a
-              class="instagram-link"
-              href="https://www.instagram.com/"
-              target="_blank"
-              ><span>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <span></span>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="twitter-link"
-              href="https://twitter.com/evafriana?lang=en"
-              target="_blank"
-              ><span>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <span></span>
-              </span>
-            </a>
-          </li>
+      <!-- end logo -->
+      <nav>
+        <input type="checkbox" id="hamburger" class="hamburger" />
+        <label for="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+        <ul class="nav-links">
+          <div class="about-host">
+            <li><a href="/">HOME</a></li>
+            <li><a href="about.html" class="active">ABOUT</a></li>
+            <li><a href="meetthehost.html">MEET THE HOST</a></li>
+          </div>
+          <div class="media">
+            <li><a href="">Spotify</a></li>
+            <li><a class="insta-link" href="">Instagram</a></li>
+            <li><a href="">Twitter</a></li>
+          </div>
         </ul>
-      </div>
-    </section>
+      </nav>
+      <!-- End nav -->
 
-    <div class="back-blue">
-      <section class="collaborate mt-6 container">
-        <p>Let's collaborate,</p>
-        <p>tell your story</p>
-        <div class="arrow-contact">
-          <img src="./assets/img/arrow-kusut.svg" alt="arrow" class="arrow" />
-          <a href="">
-            <div class="contactme">
-              <span class="inside-text">contact me</span>
-            </div>
-          </a>
-          <img class="arrow-left" src="./assets/img/arrow.svg" alt="" />
-          <img class="arrow-right" src="./assets/img/arrow.svg" alt="" />
+      <!-- Hero -->
+      <section class="hero-about mt-6">
+        <div class="title-1 container">
+          <p>Podcast</p>
+          <h1>Chez Eva</h1>
+        </div>
+        <!-- Teaser  -->
+        <div class="teaser">
+          <p class="par">(</p>
+          <p class="teaser-text">
+            Is working abroad more profitable than Indonesia? Is it difficult to
+            adapt to the work environment and culture or daily life abroad? How
+            can she/he works abroad? or simply, still confused about what to do
+            and where?
+          </p>
+          <p class="par">)</p>
+        </div>
+        <!-- End teaser  -->
+        <div class="title-2">
+          <img src="./assets/img/paris.png" alt="Paris by Cyril Mazarin" />
+          <div class="title-h2">
+            <h2 class="basedin">Based in</h2>
+            <h2 class="paris">Paris.</h2>
+          </div>
         </div>
       </section>
+      <!-- End hero -->
 
-      <!-- cta  -->
-      <div class="btn-cta mt-6">
-        <a href="#" class="cta">
-          <span>Buy me a coffee</span>
-          <svg viewBox="0 0 455 455">
-            <polygon
-              points="83.744,370 371.256,370 383.36,174.041 71.64,174.041 	"
+      <!-- button eye  -->
+      <button class="button button--surtur mt-6">
+        <svg class="textcircle" viewBox="0 0 500 500">
+          <title>Like, Subscribe, & Share.</title>
+          <defs>
+            <path
+              id="textcircle"
+              d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
             />
-            <polygon points="88.994,455 366.006,455 369.403,400 85.597,400 	" />
-            <polygon
-              points="421.506,75 33.494,75 33.494,105 67.375,105 69.787,144.041 385.213,144.041 387.625,105 421.506,105 	"
-            />
-            <rect x="66.389" width="322.221" height="45" />
-          </svg>
+          </defs>
+          <text>
+            <textPath
+              xlink:href="#textcircle"
+              aria-label="Projects & client work 2020"
+              textLength="900"
+            >
+              Like, Subscribe & Share.
+            </textPath>
+          </text>
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="eye"
+          width="70"
+          height="70"
+          viewBox="0 0 70 70"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="eye__outer"
+            d="M10.5 35.308c5.227-7.98 14.248-13.252 24.5-13.252s19.273 5.271 24.5 13.252c-5.227 7.98-14.248 13.253-24.5 13.253s-19.273-5.272-24.5-13.253z"
+          />
+          <path
+            class="eye__lashes-up"
+            d="M35 8.802v8.836M49.537 11.383l-3.31 8.192M20.522 11.684l3.31 8.192"
+          />
+          <path
+            class="eye__lashes-down"
+            d="M35 61.818v-8.836 8.836zM49.537 59.237l-3.31-8.193 3.31 8.193zM20.522 58.936l3.31-8.193-3.31 8.193z"
+          />
+          <circle class="eye__iris" cx="35" cy="35.31" r="5.221" />
+          <circle class="eye__inner" cx="35" cy="35.31" r="10.041" />
+        </svg>
+      </button>
+      <!-- button eye  -->
+
+      <!-- Description  -->
+      <section class="description container">
+        <p>
+          Eva and a new guest each episode talk about professional career
+          journey of Indonesians abroad, especially in France, to help sound off
+          on your questions in this lighthearted, insightful biweekly podcast.
+          This podcast will be in Indonesian.
+        </p>
+      </section>
+      <!-- End description  -->
+
+      <!-- Card  -->
+      <section class="card-play mt-6 container">
+        <p>- Last episode -</p>
+        <a class="card">
+          <img src="../assets/img/play-button.svg" alt="" /> Loïc Riviere
         </a>
+      </section>
+      <!-- End card  -->
+
+      <!-- Link media -->
+      <section class="link-media mt-6">
+        <p>LISTEN & SUBSCRIBE ON :</p>
+        <span class="spotify">
+          <a href="">Spotify</a>
+        </span>
+        <div class="follow">
+          <p>FOLLOW ME :</p>
+          <ul>
+            <li>
+              <a
+                class="instagram-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                ><span>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <span></span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="twitter-link"
+                href="https://twitter.com/evafriana?lang=en"
+                target="_blank"
+                ><span>
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- End link media -->
+
+      <div class="back-blue">
+        <!-- Collaborate -->
+        <section class="collaborate mt-6 container">
+          <p>Let's collaborate,</p>
+          <p>tell your story</p>
+          <div class="arrow-contact">
+            <img src="./assets/img/arrow-kusut.svg" alt="arrow" class="arrow" />
+            <a href="">
+              <div class="contactme">
+                <span class="inside-text">contact me</span>
+              </div>
+            </a>
+            <img class="arrow-left" src="./assets/img/arrow.svg" alt="" />
+            <img class="arrow-right" src="./assets/img/arrow.svg" alt="" />
+          </div>
+        </section>
+        <!-- End collaborate -->
+
+        <!-- cta  -->
+        <div class="btn-cta mt-6">
+          <a href="#" class="cta">
+            <span>Buy me a coffee</span>
+            <svg viewBox="0 0 455 455">
+              <polygon
+                points="83.744,370 371.256,370 383.36,174.041 71.64,174.041 	"
+              />
+              <polygon
+                points="88.994,455 366.006,455 369.403,400 85.597,400 	"
+              />
+              <polygon
+                points="421.506,75 33.494,75 33.494,105 67.375,105 69.787,144.041 385.213,144.041 387.625,105 421.506,105 	"
+              />
+              <rect x="66.389" width="322.221" height="45" />
+            </svg>
+          </a>
+        </div>
       </div>
-    </div>
-    <!-- end cta  -->
+      <!-- end cta  -->
+    </main>
+
+    <script src="./main.js"></script>
   </body>
-  <script src="./main.js"></script>
 </html>

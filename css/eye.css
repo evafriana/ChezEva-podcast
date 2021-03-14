@@ -1,6 +1,6 @@
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  .button {
+  #home .button {
     position: fixed;
     bottom: 15%;
     left: 3%;
@@ -15,8 +15,8 @@
     display: inline-block;
   }
 
-  .button::before,
-  .button::after {
+  #home .button::before,
+  #home .button::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -24,30 +24,30 @@
     height: 100%;
   }
 
-  .button--surtur {
+  #home .button--surtur {
     padding: 0;
     background: none;
     -webkit-clip-path: circle(40% at 50% 50%);
     clip-path: circle(40% at 50% 50%);
   }
 
-  .button--surtur:focus-visible {
+  #home .button--surtur:focus-visible {
     background: #443ffc;
   }
 
-  .textcircle {
+  #home .textcircle {
     position: relative;
     display: block;
     width: 200px;
   }
 
-  .textcircle text {
+  #home .textcircle text {
     font-size: 32px;
     text-transform: uppercase;
     fill: #000;
   }
 
-  .textcircle textPath {
+  #home .textcircle textPath {
     letter-spacing: 17px; /* Firefox needs this */
   }
 
@@ -55,11 +55,11 @@
   /* animation: rotateIt 7s linear infinite; */
   /* } */
 
-  .button--surtur .textcircle {
+  #home .button--surtur .textcircle {
     animation: rotateIt 12s linear infinite;
   }
 
-  .eye {
+  #home .eye {
     position: absolute;
     z-index: 2;
     width: 60px;
@@ -68,16 +68,16 @@
     left: calc(50% - 30px);
   }
 
-  .eye__outer,
-  .eye__inner,
-  .eye__lashes-up,
-  .eye__lashes-down {
+  #home .eye__outer,
+  #home .eye__inner,
+  #home .eye__lashes-up,
+  #home .eye__lashes-down {
     stroke: #000;
     fill: none;
     stroke-width: 1.5px;
   }
 
-  .eye__lashes-down {
+  #home .eye__lashes-down {
     opacity: 0;
   }
 
@@ -91,13 +91,13 @@
   /* animation: blinkShow 2s step-end infinite; */
   /* } */
 
-  .button--surtur .eye__lashes-up,
-  .button--surtur .eye__inner,
-  .button--surtur .eye__iris {
+  #home .button--surtur .eye__lashes-up,
+  #home .button--surtur .eye__inner,
+  #home .button--surtur .eye__iris {
     animation: blinkHide 3s step-end infinite;
   }
 
-  .button--surtur .eye__lashes-down {
+  #home .button--surtur .eye__lashes-down {
     animation: blinkShow 3s step-end infinite;
   }
 
@@ -128,7 +128,7 @@
 
 /* Large devices (landscape phones, 992px and up) */
 @media (min-width: 800px) {
-  .button {
+  #home .button {
     left: 10%;
   }
 }
