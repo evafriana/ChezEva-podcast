@@ -58,6 +58,12 @@ a:focus {
   position: relative;
 }
 
+/* Section social links */
+.social-links {
+  display: none;
+}
+/* Section social links */
+
 /* media query  */
 
 /* Medium devices (tablets, 768px and up) */
@@ -70,7 +76,7 @@ a:focus {
 
   /* Section social links */
   .social-links {
-    display: block;
+    display: flex;
     position: fixed;
     padding: 3rem 2rem;
     font-size: 15px;
@@ -93,6 +99,29 @@ a:focus {
   }
   .contact {
     margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
   }
   /* End section social links */
 }
+
+/* Fade out current container
+.fade-leave {
+  opacity: 1;
+}
+.fade-leave-active {
+  transition: opacity 0.5s linear 0.2s;
+}
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: opacity 0.5s linear 0.2s;
+}
+.fade-enter-to {
+  opacity: 1;
+} */

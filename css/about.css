@@ -10,7 +10,7 @@ body {
   border-radius: 15% 15% 0 0;
 }
 
-#about .active::after {
+/* #about .active::after {
   content: "ABOUT";
   color: transparent;
   padding: 2.5rem;
@@ -18,7 +18,7 @@ body {
   top: -90%;
   position: absolute;
   background-image: url("../assets/img/lingkaran-red.svg");
-}
+} */
 .mt-6 {
   margin-top: 6rem;
 }
@@ -280,7 +280,7 @@ body {
 /* End listen and subscribe  */
 
 /* Collaborate  */
-.collaborate {
+#about .collaborate {
   padding-top: 3rem;
   font-size: 13vw;
   font-family: "Bigilla", serif;
@@ -363,7 +363,7 @@ body {
   /* End eye */
 
   /* Collaborate  */
-  .collaborate {
+  #about .collaborate {
     padding-top: 6rem;
     padding-top: 4rem;
   }
@@ -392,11 +392,13 @@ body {
   /* End contact */
 }
 
+/* Media query */
+
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
   /* Collaborate  */
-  .collaborate {
-    padding-top: 8rem;
+  #about .collaborate {
+    padding-top: 2rem;
     font-size: 12vw;
   }
   /* End collaborate  */
@@ -483,7 +485,7 @@ body {
   /* End link media */
 
   /* Collaborate  */
-  .collaborate {
+  #about .collaborate {
     font-size: 11vw;
   }
   /* End collaborate  */

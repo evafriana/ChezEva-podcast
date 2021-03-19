@@ -1,8 +1,12 @@
+#home .button {
+  display: none;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
   #home .button {
     position: fixed;
-    bottom: 15%;
+    bottom: 10%;
     left: 3%;
     pointer-events: auto;
     cursor: pointer;

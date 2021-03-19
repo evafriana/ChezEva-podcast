@@ -23,7 +23,7 @@
     <!-- link -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     />
     <!-- Description -->
     <meta name="description" content="Home description." />
@@ -47,48 +47,27 @@
     <!-- <link rel="stylesheet" href="./about.css" /> -->
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body data-barba="wrapper">
     <main id="mth" data-barba="container" data-barba-namespace="mth">
-      <!-- Nav -->
-      <!-- logo -->
-      <a href="index.html" class="logo">
-        <img src="./assets/img/chair-mic.svg" alt="logo bird" />
-        <h1>Chez Eva</h1>
-      </a>
-      <!-- end logo -->
-      <nav>
-        <input type="checkbox" id="hamburger" class="hamburger" />
-        <label for="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
-        </label>
-        <ul class="nav-links">
-          <div class="about-host">
-            <li><a href="/">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="meetthehost.html" class="active">MEET THE HOST</a></li>
-          </div>
-          <div class="media">
-            <li><a href="">Spotify</a></li>
-            <li><a class="insta-link" href="">Instagram</a></li>
-            <li><a href="">Twitter</a></li>
-          </div>
-        </ul>
-      </nav>
-      <!-- End nav -->
-
       <!-- Hero -->
-      <section class="mth-hero mt-6">
-        <span class="mobile mth-text">- Meet the host -</span>
-        <div>
+      <section class="mt-6">
+        <div class="mth-hero-mb mobile">
+          <span class="mth-text-mb">- Meet the host -</span>
           <img src="./assets/img/host2.jpg" alt="Paris by Cyril Mazarin" />
-          <span class="desktop">- Meet the host -</span>
-          <div class="mth-title container">
+          <div class="mth-title-mb container">
             <h2 class="salut">Salut!</h2>
-            <h2 class="mobile">I'm Eva</h2>
-            <h2 class="im desktop">I'm</h2>
-            <h2 class="Eva desktop">Eva</h2>
+            <h2>I'm Eva,</h2>
+          </div>
+        </div>
+        <div class="mth-hero-dsk desktop">
+          <img src="./assets/img/host2.jpg" alt="Paris by Cyril Mazarin" />
+          <div class="mth-title container">
+            <span class="mth-text-dsk">- Meet the host -</span>
+            <div class="mth-title-dsk">
+              <h2 class="salut">Salut!</h2>
+              <h2 class="im">I'm</h2>
+              <h2 class="eva">Eva,</h2>
+            </div>
           </div>
         </div>
       </section>
@@ -191,7 +170,7 @@
               href="https://www.instagram.com/"
               target="_blank"
               ><span>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fab fa-instagram" aria-hidden="true"></i>
                 <span></span>
               </span> </a
             >Instagram
@@ -202,7 +181,7 @@
               href="https://twitter.com/evafriana?lang=en"
               target="_blank"
               ><span>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fab fa-twitter" aria-hidden="true"></i>
                 <span></span>
               </span> </a
             >Twitter
@@ -213,7 +192,7 @@
               href="https://www.linkedin.com/in/eva-afriana-36796b100/"
               target="_blank"
               ><span>
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
                 <span></span>
               </span> </a
             >linkedin
@@ -224,7 +203,7 @@
               href="https://github.com/evafriana"
               target="_blank"
               ><span>
-                <i class="fa fa-github" aria-hidden="true"></i>
+                <i class="fab fa-github" aria-hidden="true"></i>
                 <span></span>
               </span> </a
             >Github
@@ -232,24 +211,39 @@
         </ul>
       </section>
       <!-- End scrolling socials  -->
-
-      <!-- cta  -->
-      <div class="btn-cta mt-3">
-        <a href="#" class="cta">
-          <span>Buy me a coffee</span>
-          <svg viewBox="0 0 455 455">
-            <polygon
-              points="83.744,370 371.256,370 383.36,174.041 71.64,174.041 	"
-            />
-            <polygon points="88.994,455 366.006,455 369.403,400 85.597,400 	" />
-            <polygon
-              points="421.506,75 33.494,75 33.494,105 67.375,105 69.787,144.041 385.213,144.041 387.625,105 421.506,105 	"
-            />
-            <rect x="66.389" width="322.221" height="45" />
-          </svg>
-        </a>
-      </div>
     </main>
+
+    <!-- Nav -->
+    <!-- logo -->
+    <a href="index.html" class="logo">
+      <img src="./assets/img/chair-mic.svg" alt="logo bird" />
+      <h1>Chez Eva</h1>
+    </a>
+    <!-- end logo -->
+    <nav>
+      <input type="checkbox" id="hamburger" class="hamburger" />
+      <label for="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <ul class="nav-links">
+        <div class="about-host">
+          <li><a href="/">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="meetthehost.html">MEET THE HOST</a></li>
+        </div>
+        <div class="media">
+          <li><a href="">Twitter</a></li>
+          <li><a class="insta-link" href="">Instagram</a></li>
+          <li><a href="">Contact</a></li>
+        </div>
+      </ul>
+    </nav>
+    <!-- End nav -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/css"></script>
     <script src="./main.js"></script>
   </body>
 </html>

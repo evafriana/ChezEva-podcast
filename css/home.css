@@ -1,4 +1,4 @@
-#home .active::after {
+/* #home .active::after {
   content: "HOME";
   color: transparent;
   padding: 2.5rem;
@@ -6,7 +6,7 @@
   top: -90%;
   position: absolute;
   background-image: url("../assets/img/lingkaran-red.svg");
-}
+} */
 
 #home {
   overflow: hidden;
@@ -48,6 +48,9 @@
 #home .menu__item-title {
   display: flex;
   justify-content: flex-end;
+  text-align: right;
+  font-size: 13px;
+  padding: 0 0.5rem;
 }
 
 #home .menu__item-inner {
@@ -70,18 +73,6 @@
   color: var(--color-red);
 }
 
-#home .menu__item-inner::before {
-  content: "";
-  top: 55%;
-  width: 3.5rem;
-  height: 1px;
-  background: currentColor;
-  position: absolute;
-  right: calc(100% + 2rem);
-  opacity: 0;
-  pointer-events: none;
-}
-
 #home .menu__item-inner:hover::before {
   opacity: 1;
 }
@@ -92,7 +83,7 @@
   height: 1px;
   bottom: 100%;
   position: absolute;
-  left: calc(100% + 2rem);
+  right: calc(100%);
   opacity: 0;
   /* pointer-events: none; */
 }
@@ -108,14 +99,6 @@
 }
 
 /* media query  */
-
-/* Smallest device */
-@media screen and (min-width: 53em) {
-  #home .menu__item-inner {
-    padding: 1vh 0;
-    font-size: 8vh;
-  }
-}
 
 /* Small devices (landscape phones, 500px and up) */
 @media (min-width: 500px) {
@@ -135,11 +118,38 @@
   #home .menu__item {
     margin-right: 14%;
   }
+  #home .menu__item-inner {
+    font-size: 5vw;
+  }
+  #home .menu__item-title {
+    font-size: 16px;
+  }
 }
 
-/* Large devices (landscape phones, 800px and up) */
-@media (min-width: 800px) {
+/* Large devices (landscape phones, 812px and up) */
+@media (min-width: 812px) {
   #home .menu__item {
     margin-right: 20%;
+  }
+  #home .menu__item-inner::before {
+    content: "";
+    top: 55%;
+    width: 3.5rem;
+    height: 1px;
+    background: currentColor;
+    position: absolute;
+    right: calc(100% + 2rem);
+    opacity: 0;
+    pointer-events: none;
+  }
+  #home .menu__item-inner::after {
+    content: url("../assets/img/play-button.svg");
+    width: 2rem;
+    height: 1px;
+    bottom: 100%;
+    position: absolute;
+    left: calc(100% + 2rem);
+    opacity: 0;
+    /* pointer-events: none; */
   }
 }
